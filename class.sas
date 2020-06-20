@@ -4,6 +4,8 @@ data test.class_all;
     set sashelp.class sashelp.class sashelp.class;
 run;
 
+
+
 proc sort data=test.class_all out=test.class;
     by sex age;
 run;
