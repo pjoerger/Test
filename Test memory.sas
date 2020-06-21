@@ -28,7 +28,7 @@ run ;
  proc npar1way wilcoxon correct=no data=test2;
       class process;
       var count;
-      /*exact wilcoxon;*/
+      exact wilcoxon;
    run;
 %mend test2 ;
 %test2 ;
