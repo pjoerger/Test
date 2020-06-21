@@ -19,7 +19,7 @@ run;
 %macro test2 ;
 data test2 ;
 set
-%do i = 1 %to 300 ;
+%do i = 1 %to 10 ;
 sashelp.failure 
 %end ;
 ;
@@ -28,7 +28,7 @@ run ;
  proc npar1way wilcoxon correct=no data=test2;
       class process;
       var count;
-      /*exact wilcoxon;*/
+      exact wilcoxon;
    run;
 %mend test2 ;
 %test2 ;
