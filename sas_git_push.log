@@ -1,0 +1,24 @@
+ 
+ 1          OPTIONS NONOTES NOSTIMER NOSOURCE NOSYNTAXCHECK;
+ 72         
+ 73         data _null_ ;
+ 74         rc=
+ 75         gitfn_push (
+ 76         "/folders/myfolders/GitTest1/Test",
+ 77         "pjoerger",
+ 78         "#J05rg5r"
+ 79         );
+ 80         run ;
+ 
+ ERROR: Return code from GIT is (4). cannot push because a reference that you are trying to update on the remote contains commits 
+        that are not present locally.
+ NOTE:  Verwendet wurde: DATA statement - (Gesamtverarbeitungszeit):
+       real time           1.12 seconds
+       cpu time            0.11 seconds
+       
+ 
+ 81         
+ 82         
+ 83         
+ 84         OPTIONS NONOTES NOSTIMER NOSOURCE NOSYNTAXCHECK;
+ 96         
